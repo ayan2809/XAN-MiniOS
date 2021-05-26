@@ -48,23 +48,23 @@ void print_newline() {
     clear_row(NUM_COLS - 1);
 }
 
-void print_char(char character) {
-    if (character == '\n') {
-        print_newline();
-        return;
-    }
+// void print_char(char character) {
+//     if (character == '\n') {
+//         print_newline();
+//         return;
+//     }
 
-    if (col > NUM_COLS) {
-        print_newline();
-    }
+//     if (col > NUM_COLS) {
+//         print_newline();
+//     }
 
-    buffer[col + NUM_COLS * row] = (struct Char) {
-        character : (uint8_t) character,
-        color: color,
-    };
+//     buffer[col + NUM_COLS * row] = (struct Char) {
+//         character : (uint8_t) character,
+//         color: color,
+//     };
 
-    col++;
-}
+//     col++;
+// }
 
 void print_str(char* str) {
     for (size_t i = 0; 1; i++) {
